@@ -18,6 +18,7 @@ BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Parser => 3.35
 BuildRequires:	perl-Sub-Override
 BuildArch: 	noarch
+BuildRoot: 	%{_tmppath}/%{name}-%{version}
 
 %description
 HTML::TokeParser::Simple is a subclass of HTML::TokeParser that uses
