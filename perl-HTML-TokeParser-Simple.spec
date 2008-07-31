@@ -1,7 +1,7 @@
 %define module	HTML-TokeParser-Simple
 %define name	perl-%{module}
 %define version 3.15
-%define release %mkrel 1
+%define release %mkrel 3
 
 
 Name: 		%{name}
