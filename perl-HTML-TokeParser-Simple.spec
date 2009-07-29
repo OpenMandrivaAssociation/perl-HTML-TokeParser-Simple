@@ -1,24 +1,23 @@
-%define module	HTML-TokeParser-Simple
-%define name	perl-%{module}
-%define version 3.15
-%define release %mkrel 3
+%define upstream_name	 HTML-TokeParser-Simple
+%define upstream_version 3.15
 
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
-Name: 		%{name}
-Version: 	%{version}
-Release: 	%{release}
 Summary: 	Easy to use HTML::TokeParser interface
-License: 	GPL or Artistic
+License: 	GPL+ or Artistic
 Group: 		Development/Perl
-Source: 	http://search.cpan.org/CPAN/authors/id/O/OV/OVID/%{module}-%{version}.tar.bz2
-Url: 		http://search.cpan.org/dist/%{module}/
+Url: 		http://search.cpan.org/dist/%{upstream_name}/
+Source0:	http://search.cpan.org/CPAN/authors/id/O/OV/OVID/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
 %endif
 BuildRequires:	perl-HTML-Parser => 3.35
 BuildRequires:	perl-Sub-Override
 BuildArch: 	noarch
-BuildRoot: 	%{_tmppath}/%{name}-%{version}
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 HTML::TokeParser::Simple is a subclass of HTML::TokeParser that uses
@@ -33,7 +32,7 @@ instead of
  $token->[0] eq 'S' and $token->[1] eq 'form'
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 perl -pi -e 'tr/\r//d;' Changes README
 
 %build
@@ -55,5 +54,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{perl_vendorlib}/HTML
 %{_mandir}/*/*
-
-
