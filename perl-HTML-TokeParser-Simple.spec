@@ -1,15 +1,15 @@
 %define upstream_name	 HTML-TokeParser-Simple
-%define upstream_version 3.15
+%define upstream_version 3.16
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 3.16
+Release:	1
 
 Summary:	Easy to use HTML::TokeParser interface
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://search.cpan.org/CPAN/authors/id/O/OV/OVID/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/authors/id/O/OV/OVID/HTML-TokeParser-Simple-3.16.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(HTML::Parser)
@@ -86,4 +86,5 @@ make test
 
 * Tue Apr 20 2004 Stefan van der Eijk <stefan@eijk.nu> 2.2-1mdk
 - initial package
+
 
