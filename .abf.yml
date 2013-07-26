@@ -1,2 +1,4 @@
+removed_sources:
+  HTML-TokeParser-Simple-3.15.tar.bz2: f19b73c75f3fce682bb6a3f710d12473e23d8a0a
 sources:
-  "HTML-TokeParser-Simple-3.15.tar.bz2": f19b73c75f3fce682bb6a3f710d12473e23d8a0a
+  HTML-TokeParser-Simple-3.16.tar.gz: e1f4b70dd7dbd28c599b12b667acc7ddf2bf8613
