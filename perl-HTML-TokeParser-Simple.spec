@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 3.16
-Release:	1
+Release:	2
 
 Summary:	Easy to use HTML::TokeParser interface
 License:	GPL+ or Artistic
