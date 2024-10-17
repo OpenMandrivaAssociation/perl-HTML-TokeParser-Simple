@@ -8,7 +8,7 @@ Release:	3
 Summary:	Easy to use HTML::TokeParser interface
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/authors/id/O/OV/OVID/HTML-TokeParser-Simple-3.16.tar.gz
 
 BuildRequires:	perl-devel
