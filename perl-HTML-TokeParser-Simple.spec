@@ -11,6 +11,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/authors/id/O/OV/OVID/HTML-TokeParser-Simple-3.16.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(HTML::Parser)
 BuildRequires:	perl(Sub::Override)
