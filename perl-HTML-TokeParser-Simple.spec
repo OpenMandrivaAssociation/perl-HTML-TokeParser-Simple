@@ -1,9 +1,7 @@
 %define upstream_name	 HTML-TokeParser-Simple
-%define upstream_version 3.16
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	3.16
+Release:	5
 
 Summary:	Easy to use HTML::TokeParser interface
 License:	GPL+ or Artistic
@@ -30,7 +28,7 @@ instead of
  $token->[0] eq 'S' and $token->[1] eq 'form'
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 perl -pi -e 'tr/\r//d;' Changes README
 
 %build
@@ -52,9 +50,7 @@ make test
 %changelog
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 3.150.0-1mdv2010.0
 + Revision: 403264
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 3.15-3mdv2009.0
+- rebuild using %3.16 Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 3.15-3mdv2009.0
 + Revision: 257240
 - rebuild
 
